@@ -592,7 +592,7 @@ function App() {
           options={options}
         />
       )}
-      <div style={{ background: 'linear-gradient(#2b2d42,#8d99ae)', justifyContent: 'center', padding: '20px', minHeight: '100vh' }}>
+      <div style={{ background: 'black', justifyContent: 'center', padding: '20px', minHeight: '100vh' }}>
         <header style={{ textAlign: 'center' }}>
           <label style={{ color: '#6fffe9', fontWeight: 'bold', fontSize: '16px' }}>
             Upload your file here to see the data:
