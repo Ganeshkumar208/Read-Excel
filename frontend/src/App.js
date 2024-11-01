@@ -51,6 +51,7 @@ function App() {
     };
   };
 
+
   const options = useMemo(() => {
     return {
       "autoPlay": true,
@@ -607,10 +608,10 @@ function App() {
           <br /><br />
 
           {data.length > 0 && (
-            <div style={{ overflowX: 'auto', marginTop: '40px', backgroundColor: '#f1f1f1', padding: '10px', borderRadius: '8px', color: '#22577a', background: 'linear-gradient(#c9ada7,#809bce)' }}>
+            <div style={{ overflowX: 'auto', marginTop: '40px', backgroundColor: '#f1f1f1', padding: '10px', borderRadius: '8px', color: 'whitesmoke', background: 'transparent' }}>
               <table style={{ borderCollapse: 'collapse', width: '100%', borderColor: 'red' }}>
                 <thead>
-                  <tr style={{ backgroundColor: '#8a817c', color: '#001d3d' }}>
+                  <tr style={{ backgroundColor: '#8ecae6', color: '#001d3d' }}>
                     {Object.keys(data[0]).map((key) => (
                       <th key={key} style={{ border: '1px solid #ddd', padding: '8px' }}>
                         {key}
@@ -622,7 +623,7 @@ function App() {
                   {data.map((row, rowIndex) => (
                     <tr key={rowIndex}>
                       {Object.keys(data[0]).map((key, colIndex) => (
-                        <td key={colIndex} style={{ border: '1px solid #ddd', padding: '8px' }}>
+                        <td key={colIndex} style={{ border: '1.5px solid #ddd', padding: '8px' }}>
                           {row[key] || ''}
                         </td>
                       ))}
